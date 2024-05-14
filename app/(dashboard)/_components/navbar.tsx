@@ -3,6 +3,7 @@
 import {
   OrganizationSwitcher,
   UserButton,
+  UserProfile,
   useOrganization,
 } from "@clerk/nextjs";
 import { SearchInput } from "./search-input";
@@ -45,7 +46,7 @@ export const Navbar = () => {
         <InviteButton />
       )}
       
-      <UserButton />
+      <UserButton afterSignOutUrl="/" />
     </div>
   );
 };
